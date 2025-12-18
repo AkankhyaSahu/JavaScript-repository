@@ -53,4 +53,41 @@ console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); //true
 
 
+//*******object deconstruct*********** */
 
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "ak"
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course
+console.log(courseInstructor); //ak
+// or 
+const {courseInstructor: instructor} = course
+console.log(instructor); //ak
+
+// example of object deconstruct****React.js****/
+//const navbar = (PaymentResponse.company) => {} //instead of this
+
+const navbar = ({company}) => {  //this is used   
+}
+navbar(company = "ak")
+
+//API= Application Programming Interface: ex- login using google/facebook
+//JSON= JavaScript Object Notation
+//API defines how data is requested and sent and JSON defines in what format the data is sent
+
+//*****JSON******* *//API can be given as object or array
+// {
+//     "name": "ak",
+//     "courseName": "js"
+//     "price": "free"
+// }
+[
+    {},
+    {},
+    {}
+]
