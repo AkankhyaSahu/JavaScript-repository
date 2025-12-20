@@ -82,7 +82,19 @@ function addone(num){
 }
 addone(5)
 
+//const addTwo = function(num) {
+    return num + 2
+
+addTwo(5)
+
+
+console.log(addone(5))  //6 only declaration
+function addone(num){
+    return num + 1
+}
+
+
+console.log(addTwo(5)) //error becoz we have declared as well as hold as variable
 const addTwo = function(num){
     return num + 2
 }
-addTwo(5)
