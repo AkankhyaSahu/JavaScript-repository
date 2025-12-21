@@ -26,3 +26,23 @@ switch (month) {
         console.log("default case match");
         break;
 }
+
+//const month = 3
+switch (month) {
+    case "jan":
+        console.log("January");
+        break;
+    case "feb":
+        console.log("feb");
+        break;
+    case "march":
+        console.log("march");
+        break;
+    case "march":
+        console.log("april");
+        break;
+
+    default:
+        console.log("default case match");
+        break;
+}
