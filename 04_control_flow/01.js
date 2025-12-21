@@ -51,3 +51,22 @@ if (balance < 500) {
     console.log("less than 1200");
 }
 //less than 1200
+
+
+//****"and"**** */
+// const UserLoggedIn = true
+// const debitCard = true
+if (UserLoggedIn && debitCard){
+    console.log("Allow to buy course");
+} //Allow to buy course
+
+
+//***"or"**** */
+const UserLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+if (loggedInFromGoogle || loggedInFromEmail){
+    console.log("User logged in");
+} //User logged in
