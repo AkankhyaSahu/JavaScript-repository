@@ -28,3 +28,20 @@ myNums.forEach( (num) => {
 console.log(newNums1);
 //returns values
 
+
+//+++++book example++//
+
+const books = [
+    {title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+    
+]
+
+let userBooks = books.filter( (bk) => bk.genre === 'History')
+
+userBooks = books.filter( (bk) => { return bk.publish >= 2000})
+
+userBooks = books.filter( (bk) => { 
+    return bk.publish >= 1995 && bk.genre === "History"
+})
+
+console.log(userBooks);
